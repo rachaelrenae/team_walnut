@@ -2,7 +2,7 @@
 include('signupFunction.php');
 include('session.php');
 include('logout.php');
-include('session2.php');
+//include('session2.php');
 ?>
 
 <!DOCTYPE html>

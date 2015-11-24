@@ -9,11 +9,11 @@ $connection = mysql_connect($dbhost, $dbuser, $dbpass);
 //picking database
 $db = mysql_select_db($dbname, $connection);
 session_start();// starting Session
-$user_check=$_SESSION['login_user'];
+// $user_check=$_SESSION['login_user'];
 // SQL Query To Fetch Complete Information Of User
-$ses_sql=mysql_query("select username from Users where userName='$user_check'", $connection);
-$row = mysql_fetch_assoc($ses_sql);
-$login_session =$row['username'];// Storing Session as username
+// $ses_sql=mysql_query("select username from Users where userName='$user_check'", $connection);
+// $row = mysql_fetch_assoc($ses_sql);
+$login_session =$_SESSION['login_user'];// Storing Session as username
 if(!isset($login_session)){ //if login session is not set
 mysql_close($connection); // Closing Connection
 }

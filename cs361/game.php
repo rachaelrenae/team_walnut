@@ -2,7 +2,7 @@
 include('loginFunction.php'); // Includes Login Script
 include('session.php');
 include('logout.php');
-include('session2.php');
+//include('session2.php');
 ?>
 
 <!DOCTYPE html>
