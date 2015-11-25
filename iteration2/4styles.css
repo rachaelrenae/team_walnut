@@ -1,0 +1,68 @@
+body {
+  background-color: #ccccff;
+  font-family: Georgia;
+  background-image: url(http://d2esipn4y2tzb0.cloudfront.net/assets/images/5069a80fcf5e1d690e000024/original.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  padding:2%;
+}
+a:hover{
+  color:red;
+}
+.main, header {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.main {
+  background-color:#6699ff;
+  padding: 1%;
+  height: 480px;
+  color:white;
+  background-image:url(http://www.acegoals.com/wp-content/uploads/2015/03/bb3background.png);
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+header {
+  background-color:purple;
+  margin-bottom: 1%;
+  background-image:url(http://cowe.com.au/cowepress/wp-content/uploads/2013/02/background-940x300.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+#session {
+  text-align: right;
+  font-size: 20px;
+  margin-right: 1%;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+header img {
+
+}
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: purple;
+  text-align: right;
+  color: white;
+  background-image:url(http://cowe.com.au/cowepress/wp-content/uploads/2013/02/background-940x300.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+table, th, td{
+  /*border: 1px solid white;*/
+}

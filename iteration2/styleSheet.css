@@ -1,0 +1,48 @@
+#container
+{
+	margin: 0 auto;
+	width: 800px;
+	background: #fff
+}
+
+#header
+{
+	background: #ccc;
+	padding: 40px;
+}
+
+#header h1 { margin: 0; }
+
+#textboxid
+{
+	height: 200px;
+	width: 800px;
+}
+
+#content
+{
+	clear: left;
+	padding: 40px;
+}
+
+#content h2
+{
+	color: #000;
+	font-size: 160%;
+	margin: 0 0 .5em;
+}
+
+#content h3
+{
+	color: #000;
+	font-size: 160%;
+	margin: 0 0 .5em;
+}
+
+#footer
+{
+	background: #ccc;
+	text-align: left;
+	padding: 40px;
+	height 1%;
+}
