@@ -6,12 +6,16 @@ $dbuser = 'christme-db';
 $dbpass = '0M0RvQrlk8ux5iWf';
 $msg = '';
 
+$sortMethod = $_POST["sort"];
+
+
 $mysql_handle = mysql_connect($dbhost, $dbuser, $dbpass)
   or die("Error connecting to database server");
 
 mysql_select_db($dbname, $mysql_handle)
   or die("Error selecting database: $dbname");
 
+  //The SQL query needs to have an ORDER BY tag and use the $sortMethod variable to determine the order method
   $query = "SELECT * FROM therapists"; //You don't need a ; like you do in SQL
   $result = mysql_query($query);
   echo "<table>"; // start a table tag in the HTML
