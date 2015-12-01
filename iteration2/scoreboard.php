@@ -37,7 +37,7 @@ include('session2.php');
             <b>Filters:</b>
             <form method = "post" action = "scoreboardFunction.php">
             Sort By:
-              <select>
+              <select id = "sort">
                 <option value="Price">Price</option>
                 <option value="Interest">Interest</option>
                 <option value="Gender">Gender</option>
