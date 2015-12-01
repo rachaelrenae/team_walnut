@@ -35,28 +35,15 @@ include('session2.php');
 
           <div class="main">
             <b>Filters:</b>
-            <form>
-            Credentials:
+            <form method = "post" action = "scoreboardFunction.php">
+            Sort By:
               <select>
-                <option value="#">1</option>
-                <option value="#">2</option>
-                <option value="#">3</option>
-                <option value="#">4</option>
+                <option value="Price">Price</option>
+                <option value="Interest">Interest</option>
+                <option value="Gender">Gender</option>
+                <option value="Name">Name</option>
               </select>
-            <br>Disorder Specialization:
-              <select>
-                <option value="#">1</option>
-                <option value="#">2</option>
-                <option value="#">3</option>
-                <option value="#">4</option>
-              </select>
-            <br>Price Range:
-              <select>
-                <option value="#">1</option>
-                <option value="#">2</option>
-                <option value="#">3</option>
-                <option value="#">4</option>
-              </select>
+              <input type = "submit">
             </form>
             <?php
             include('scoreboardFunction.php');
