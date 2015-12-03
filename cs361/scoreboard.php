@@ -67,6 +67,9 @@ include('logout.php');
               </table>
               <input type="submit" value = "Submit" name= "submit">
             </form>
+            <form method = "GET" action = "">
+              <input type ="submit" value ="View All" name ="submit">
+            </form>
             <?php
             include('scoreboardFunction.php');
             ?>

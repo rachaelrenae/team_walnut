@@ -49,5 +49,21 @@
     }
     echo "</table>";
   }
+
+
+  $submit = $_GET['submit'];
+
+  if ($submit == "View All"){
+    $query = "SELECT * FROM therapists";
+    $result = mysql_query($query);
+    echo "<table>";
+    echo "<tr><th>" . "First Name" . "</th><th>" . "Last Name". "</th><th>" . "Price". "</th><th>" . "Speciality". "</th><th>" . "Location". "</th></tr>";
+    while($row = mysql_fetch_array($result))
+    {
+      echo "<tr><td>" . $row['firstName'] . "</td><td>" . $row['lastName'] . "</td><td>" . $row['price'] . "</td><td>" . $row['speciality'] . "</td><td>" . $row['location'] . "</td></tr>";
+    }
+    echo "</table>";
+  }
+
   mysql_close($mysql_handle);
 ?>
