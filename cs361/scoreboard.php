@@ -34,40 +34,39 @@ include('logout.php');
 
           <div class="main">
             <b>Filters:</b>
-            <form>
-            <table>
-            <tr><td>Credentials</td>
-              <td>
-              <select>
-                <option value="#">1</option>
-                <option value="#">2</option>
-                <option value="#">3</option>
-                <option value="#">4</option>
-              </select>
-              </td>
-            </tr>
-            <tr><td>Disorder Specialization</td>
-              <td>
-              <select>
-                <option value="#">1</option>
-                <option value="#">2</option>
-                <option value="#">3</option>
-                <option value="#">4</option>
-              </select>
-              </td>
-            </tr>
-            <tr><td>Price Range</td>
-              <td>
-              <select>
-                <option value="#">1</option>
-                <option value="#">2</option>
-                <option value="#">3</option>
-                <option value="#">4</option>
-              </select>
-              </td>
-            </tr>
+            <form method="GET" action="">
+              <table>
+                <tr><td>Price range:</td>
+                  <td>
+                  <select name = "price">
+                    <option value="low">Low to High</option>
+                    <option value="high">High to Low</option>
+                    <option value="any">None</option>
+                  </select>
+                  </td>
+                </tr>
+                <tr><td>Disorder Specialization:</td>
+                  <td>
+                  <select name="speciality">
+                    <option value="PTSD">PTSD</option>
+                    <option value="OCD">OCD</option>
+                    <option value="Anxiety">Anxiety</option>
+                  </select>
+                  </td>
+                </tr>
+                <tr><td>Location:</td>
+                  <td>
+                  <select name="location">
+                    <option value="Corvallis">Corvallis</option>
+                    <option value="Salem">Salem</option>
+                    <option value="Philomath">Philomath</option>
+                    <option value="Albany">Albany</option>
+                  </select>
+                  </td>
+                </tr>
+              </table>
+              <input type="submit" value = "Submit" name= "submit">
             </form>
-
             <?php
             include('scoreboardFunction.php');
             ?>
